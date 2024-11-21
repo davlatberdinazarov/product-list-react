@@ -1,0 +1,105 @@
+.container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 30px 15px;
+  height: 100vh;
+  /* grid */
+  display: grid;
+  grid-template-columns: 800px auto;
+  column-gap: 20px;
+}
+
+.cards-section {
+  height: 100%;
+}
+
+.basket-section {
+  min-height: 216px;
+  background-color: white;
+  padding: 12px 19px;
+  border-radius: 12px;
+  box-shadow: 2px 1.2px 4px;
+  max-height: 100vh;
+  overflow: scroll;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 14px;
+}
+
+.card {
+  min-height: 200px;
+  max-width: 270px;
+}
+
+.card_content h5 {
+  font-weight: 400;
+  color: rgb(138, 121, 121);
+}
+
+.card_content h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 6px 0;
+}
+
+.card_content p {
+  color: var(--light-red);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.img-container {
+  width: 100%;
+  height: 212px;
+  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.add-btn {
+  background-color: white;
+  border: 2px solid var(--light-red);
+  color: var(--light-red);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 40px;
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* /modal */
+@media (max-width: 1100px) {
+  .container {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .cards {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 400px) {
+  .cards {
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}

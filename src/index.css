@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+ 
+  --light-red: #c83b0e;
+  --light-pink: #fcf8f5;
+}
+
+body {
+  background-color: var(--light-pink);
+   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
